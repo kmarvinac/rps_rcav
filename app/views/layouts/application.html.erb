@@ -5,8 +5,39 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+ <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
 </head>
+
+<hr>
+
 <body>
+  <div class = "container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-xs-12">
+        <div class="btn-group btn-group-justified">
+          <a href="/rock" class="btn btn-block btn-primary">
+            <h4>
+              Play Rock
+            </h4>
+          </a>
+
+          <a href="/paper" class="btn btn-block btn-info">
+            <h4>
+            Play Paper
+            </h4>
+          </a>
+
+          <a href="/scissors" class="btn btn-block btn-primary">
+            <h4>
+            Play Scissors
+            </h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <hr>
 
 <%= yield %>
 
